@@ -1,3 +1,22 @@
-models/
-inference_log.txt
-Cookie_on_belt.mp4
+# Logs
+*.log
+*.txt
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
