@@ -1,6 +1,13 @@
 ## FastInfer
 
-A minimal, fast video inference pipeline that reads frames asynchronously, runs object detection, overlays results, and writes annotated video.
+A minimal, fast video inference pipeline that reads frames asynchronously, runs object detection, overlays results, and writes annotated video.Results are still not optimal. Inference pipeline takes 300 ms to run with int8 tflite model with 640 by 640 input. Need to come to 40 ms to process video online and complete. That's why currently it is outputting final frame only. Also model is not finetuned, so no accuracy. 
+
+Aim : To show understanding of problem
+
+Future work in 7 days : 
+- Smalled tflite model with 320 inout size
+- finetune that model
+- Add multiple workers.
 
 ### Features
 - Queue-based capture → inference pipeline (drops backlog; processes newest frame).
