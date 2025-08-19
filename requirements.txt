@@ -2,3 +2,4 @@ ultralytics
 opencv-python
 numpy
 onnx2tf
+tensorflow
